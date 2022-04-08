@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoftgamesTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kD2-PV-3Of">
+                                <rect key="frame" x="10" y="54" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UDg-dF-p9Z"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wme-qM-ECM">
+                                <rect key="frame" x="10" y="98" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lP9-2s-29J"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQn-uF-SZW">
+                                <rect key="frame" x="178.5" y="152" width="57" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" systemColor="tintColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameSubmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOX-hf-k8L"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select DOB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKe-yx-2ZJ">
+                                <rect key="frame" x="10" y="206" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UoN-EY-zqi"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-ia-sin">
+                                <rect key="frame" x="178.5" y="260" width="57" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" systemColor="tintColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dobSubmitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kt-w5-VaO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wme-qM-ECM" firstAttribute="top" secondItem="kD2-PV-3Of" secondAttribute="bottom" constant="10" id="5XA-GX-WTJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wme-qM-ECM" secondAttribute="trailing" constant="10" id="FPq-lO-gat"/>
+                            <constraint firstItem="hlk-ia-sin" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L2v-MV-KNv"/>
+                            <constraint firstItem="Wme-qM-ECM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Lbv-Xj-be3"/>
+                            <constraint firstItem="cKe-yx-2ZJ" firstAttribute="top" secondItem="eQn-uF-SZW" secondAttribute="bottom" constant="20" id="Tnc-7L-jY2"/>
+                            <constraint firstItem="hlk-ia-sin" firstAttribute="top" secondItem="cKe-yx-2ZJ" secondAttribute="bottom" constant="20" id="agI-n5-QyA"/>
+                            <constraint firstItem="kD2-PV-3Of" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fxv-tq-kdK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cKe-yx-2ZJ" secondAttribute="trailing" constant="10" id="i70-Dj-2Qe"/>
+                            <constraint firstItem="eQn-uF-SZW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jL0-1v-b7E"/>
+                            <constraint firstItem="cKe-yx-2ZJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="lBG-c3-c37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kD2-PV-3Of" secondAttribute="trailing" constant="10" id="njO-7F-kYZ"/>
+                            <constraint firstItem="eQn-uF-SZW" firstAttribute="top" secondItem="Wme-qM-ECM" secondAttribute="bottom" constant="20" id="qih-mQ-RIK"/>
+                            <constraint firstItem="kD2-PV-3Of" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="vCk-Ee-cIT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateOfBirthTextField" destination="cKe-yx-2ZJ" id="UNL-M5-7hA"/>
+                        <outlet property="dobSubmitButton" destination="hlk-ia-sin" id="vbD-ne-Fts"/>
+                        <outlet property="firstNameTextField" destination="kD2-PV-3Of" id="iAt-wu-vvy"/>
+                        <outlet property="lastNameTextfield" destination="Wme-qM-ECM" id="EFq-VF-95w"/>
+                        <outlet property="nameSubmitButton" destination="eQn-uF-SZW" id="tKe-Lo-tY7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19" y="49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
